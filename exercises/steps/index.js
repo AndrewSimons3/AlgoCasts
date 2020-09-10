@@ -35,16 +35,27 @@
 //   }
 
 
-//SOLUTION 3 RECURSIVE
+//SOLUTION 3 RECURSION
 
-// function printNumber(n, dec = 1) {
-//   if (n === 0) {
+// function steps(n, row = 0, stair = '') {
+//   if (n === row) {
 //     return;
 //   }
 
-//   printNumber(n - dec)
+//   if (n === stair.length) {
+//     console.log(stair);
+//     return steps(n, row + 1);
+//   }
+
+//   if (stair.length <= row) {
+//     stair += '#';
+//   } else {
+//     stair += ' ';
+//   }
+//   steps(n, row, stair);
 // }
 
-// printNumber(10)
+
+
 
 module.exports = steps;

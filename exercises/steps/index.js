@@ -35,4 +35,16 @@
 //   }
 
 
+//SOLUTION 3 RECURSIVE
+
+// function printNumber(n, dec = 1) {
+//   if (n === 0) {
+//     return;
+//   }
+
+//   printNumber(n - dec)
+// }
+
+// printNumber(10)
+
 module.exports = steps;
